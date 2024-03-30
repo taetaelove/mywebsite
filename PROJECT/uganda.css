@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+.main-heading {
+    text-align: center;
+}
+
+
+.title {
+    background-color: #ff0000;
+    text-align: center;
+    padding: 1rem;
+}
+
+.title h1 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ff0000; 
+    text-align: center;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #000000; 
+    color: yellow;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.introduction {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.industry-section {
+    display: inline-block;
+    width: 45%; /* Adjust as needed */
+    margin: 10px;
+    vertical-align: top;
+}
+.industry-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.industry-content h2 {
+    text-align: center; /* Center headings */
+}
+
+.industry-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+.article-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.news-feed-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+}
+.news-feed {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.news-item {
+    margin-bottom: 10px;
+}
+.news-item a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.news-item a:hover {
+    text-decoration: underline;
+    color: #f00;
+}
+.news-item a:visited {
+    color: #666; /* Change color for visited links */
+}
+
+
+.video-carousel {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.video-slide {
+    padding: 0 10px;
+    display: inline-block; /* Display slides inline */
+    margin: 0 auto; /* Center the slides horizontally */
+}
+.video-slide iframe {
+    width: 100%;
+    height: 300px;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block; 
+    }
+}

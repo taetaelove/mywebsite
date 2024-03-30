@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+header, footer {
+    background-color:  #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+}
+
+.title {
+    background-color: #006400;
+    text-align: center;
+    padding: 1rem;
+}
+
+.title h1 {
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #006400; 
+    text-align: center;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #ff0000; 
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.introduction {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.industry-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+.texttile-content, .textile-images {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.textile-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textile-images img {
+    margin-bottom: 20px;
+    width: auto; 
+    height: 300px; 
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.industry-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.industry-content, .industry-images {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.industry-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.industry-images img {
+    margin-bottom: 20px;
+    width: auto; 
+    height: 100px; /* Adjust based on your preference */
+    object-fit: cover;
+}
+
+.industry-carousel {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-container img {
+    flex: 0 0 50%;
+    width: 50%;
+    height: auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+
+
+
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+    .industry-section {
+        flex-direction: column;
+    }
+    
+    .industry-content, .industry-images {
+        padding: 20px 0;
+    }
+
+    .industry-images img {
+        width: 100%; /* Makes images responsive */
+        max-width: 400px; /* Adjust this to keep images from becoming too large on small screens */
+        height: auto;
+    }
+}
+
+
+.textile-industry {
+    background-color: #eef;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.industry-carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+    }
+}
+
+
+body.bangladesh h1, body.bangladesh h2, body.bangladesh p {
+    color: white;
+}
